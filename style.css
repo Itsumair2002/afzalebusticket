@@ -1,0 +1,757 @@
+/* General Styles */
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background: #f4f4f4;
+    color: #333;
+}
+
+/* Navbar */
+.navbar {
+    width: 100%;
+    padding: 20px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.navbar .logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #f1c40f;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #fff;
+    transition: 0.3s;
+}
+
+.nav-links li a:hover {
+    color: #f1c40f;
+}
+
+.btn {
+    padding: 10px 20px;
+    background: #f1c40f;
+    color: #000;
+    font-weight: bold;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #e0b50e;
+}
+
+/* Hero Section */
+.hero-container {
+    background: url('https://source.unsplash.com/1600x900/?bus,travel') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    color: #fff;
+}
+
+.hero-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.hero-content {
+    z-index: 1;
+    max-width: 700px;
+}
+
+.hero-content h1 {
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.hero-content p {
+    font-size: 22px;
+    margin-bottom: 30px;
+}
+
+.btn-primary {
+    display: inline-block;
+    padding: 15px 35px;
+    background: #f1c40f;
+    color: #000;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-primary:hover {
+    background: #e0b50e;
+    transform: scale(1.05);
+}
+
+/* Features Section */
+.features {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 80px 20px;
+    background: #fff;
+}
+
+.feature-card {
+    background: #f1c40f;
+    color: #222;
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transition: 0.3s ease-in-out;
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+}
+
+.feature-card h2 {
+    font-size: 26px;
+    margin-bottom: 15px;
+}
+
+.feature-card p {
+    font-size: 18px;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 20px;
+    background: #000;
+    color: #fff;
+    font-size: 16px;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Landing Page */
+.landing-container, .form-container, .confirmation-container {
+    text-align: center;
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #333;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+p {
+    color: #666;
+    font-size: 18px;
+}
+
+.primary-btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #28a745;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: all 0.3s;
+}
+
+.primary-btn:hover {
+    background-color: #218838;
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Toast Notification */
+.toast {
+    visibility: hidden;
+    min-width: 250px;
+    background-color: #323232;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    position: fixed;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 5px;
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.3);
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out, visibility 0.5s;
+}
+
+.toast.show {
+    visibility: visible;
+    opacity: 1;
+}
+/* Booking Page Styling */
+.booking-container {
+    max-width: 600px;
+    margin: 100px auto;
+    padding: 40px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+.booking-container h1 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-group label {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 15px;
+    font-size: 18px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+    transition: border 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    border-color: #f1c40f;
+    box-shadow: 0 0 8px rgba(241, 196, 15, 0.5);
+}
+
+/* Submit Button */
+.input-submit {
+    text-align: center;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    background: #f1c40f;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.submit-btn:hover {
+    background: #e0b50e;
+    transform: scale(1.05);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .booking-container {
+        width: 90%;
+        padding: 30px;
+    }
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 20px;
+    background: #000;
+    color: #fff;
+    font-size: 16px;
+}
+/* Confirmation Page Styling */
+.confirmation-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    padding: 20px;
+}
+
+.confirmation-box {
+    background: #fff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 500px;
+    width: 100%;
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+.confirmation-box h1 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 15px;
+}
+
+.confirmation-box p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Ticket details section */
+.ticket-details {
+    background: #f1f1f1;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.ticket-details p {
+    margin: 10px 0;
+}
+
+.ticket-details span {
+    font-weight: bold;
+    color: #e67e22;
+}
+
+/* Buttons */
+.download-btn,
+.back-home-btn {
+    width: 100%;
+    padding: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.download-btn {
+    background: #27ae60;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.download-btn:hover {
+    background: #219150;
+    transform: scale(1.05);
+}
+
+.back-home-btn {
+    background: #f39c12;
+    color: white;
+}
+
+.back-home-btn:hover {
+    background: #e67e22;
+    transform: scale(1.05);
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 20px;
+    background: #000;
+    color: #fff;
+    font-size: 16px;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .confirmation-box {
+        padding: 30px;
+    }
+}
+/* Booking Page Styling */
+.booking-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+    background: linear-gradient(to right, #6dd5ed, #2193b0);
+    padding: 20px;
+}
+
+.booking-box {
+    background: #fff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 500px;
+    width: 100%;
+    animation: slideIn 0.8s ease-in-out;
+}
+
+.booking-box h1 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+/* Form styling */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #555;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 12px;
+    font-size: 18px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    border-color: #27ae60;
+}
+
+/* Booking button */
+.book-btn {
+    width: 100%;
+    padding: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    background: #27ae60;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.book-btn:hover {
+    background: #219150;
+    transform: scale(1.05);
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 20px;
+    background: #000;
+    color: #fff;
+    font-size: 16px;
+}
+
+/* Slide-in animation */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .booking-box {
+        padding: 30px;
+    }
+}
+/* Toast Notification Styles */
+.toast {
+    position: fixed;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #333;
+    color: #fff;
+    padding: 15px 30px;
+    border-radius: 8px;
+    font-size: 18px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    transition: opacity 0.5s, transform 0.5s ease-in-out;
+    z-index: 1000;
+}
+
+.toast.show {
+    opacity: 1;
+    transform: translateX(-50%) translateY(-10px);
+}
+
+.toast.success {
+    background: #28a745;
+}
+
+.toast.error {
+    background: #dc3545;
+}
+
+.toast.info {
+    background: #007bff;
+}
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background: linear-gradient(to right, #ff9966, #ff5e62);
+    color: #333;
+}
+
+/* Booking Page Styling */
+.booking-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+    padding: 20px;
+}
+
+.booking-box {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 500px;
+    width: 100%;
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+.booking-box h1 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Form styling */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.form-group select,
+.form-group input {
+    width: 100%;
+    padding: 12px 15px;
+    font-size: 18px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.form-group select:focus,
+.form-group input:focus {
+    border-color: #ff5e62;
+    box-shadow: 0 0 10px rgba(255, 94, 98, 0.5);
+}
+
+/* Booking Button */
+.book-btn {
+    width: 100%;
+    padding: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    background: #ff5e62;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 15px rgba(255, 94, 98, 0.3);
+}
+
+.book-btn:hover {
+    background: #ff3b4a;
+    transform: scale(1.05);
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 20px;
+    background: #2c3e50;
+    color: #fff;
+    font-size: 16px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Toast Notification */
+.toast {
+    visibility: hidden;
+    min-width: 250px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    position: fixed;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 5px;
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.3);
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out, visibility 0.5s;
+}
+
+.toast.show {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .booking-box {
+        padding: 30px;
+        max-width: 90%;
+    }
+
+    .book-btn {
+        font-size: 18px;
+    }
+
+    .footer {
+        font-size: 14px;
+    }
+}
